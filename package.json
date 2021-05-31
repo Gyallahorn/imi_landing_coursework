@@ -4,10 +4,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "predeploy":"npm run dev",
-    "deploy":"gh-pages -d build",
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "npm install && npm run dev ,
     "postbuild": "next-sitemap"
   },
   "dependencies": {
